@@ -4,6 +4,7 @@ import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -45,7 +46,15 @@ const EmailSection = () => {
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
     >
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
-      <div className="z-10">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, x: 50 },
+          visible: { opacity: 1, x: 0 },
+        }} className="z-10">
         <h5 className="text-xl font-bold text-white my-2">
           Let`&apos;s Connect
         </h5>
@@ -56,15 +65,23 @@ const EmailSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
+          <Link href="https://github.com/EbubeEvan">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="linkedin.com">
+          <Link href="https://www.linkedin.com/in/evangeline-mmayie-146034250/">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
-      </div>
-      <div>
+      </motion.div>
+      <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
+          }}>
         {emailSubmitted ? (
           <p className="text-green-500 text-sm mt-2">
             Email sent successfully!
@@ -125,7 +142,7 @@ const EmailSection = () => {
             </button>
           </form>
         )}
-      </div>
+      </motion.div>
     </section>
   );
 };
