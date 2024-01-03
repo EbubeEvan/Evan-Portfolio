@@ -109,7 +109,7 @@ const AboutSection = () => {
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },
           }}
-         className="flex flex-row justify-start mt-8">
+         className="flex flex-row justify-start mt-8 max-[280px]:flex-wrap">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
