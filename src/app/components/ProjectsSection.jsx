@@ -16,12 +16,12 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Finkeep",
+    title: "Trankeep",
     description: "A book-Keeping app for small businesses, built with Typescript, Next.js, Tailwindcss, and Postgresql.",
     image: "/images/projects/2.jpg",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/EbubeEvan/Finkeep",
-    previewUrl: "https://finkeep-ebubeevan.vercel.app/",
+    gitUrl: "https://github.com/EbubeEvan/Trankeep",
+    previewUrl: "https://trankeep.vercel.app/",
   },
 ];
 
