@@ -23,6 +23,15 @@ const projectsData = [
     gitUrl: "https://github.com/EbubeEvan/Trankeep",
     previewUrl: "https://trankeep.vercel.app/",
   },
+  {
+    id: 3,
+    title: "Clearlink",
+    description: "The landing page for Clearlink video conferencing app",
+    image: "/images/projects/3.jpg",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/EbubeEvan/Clear-link",
+    previewUrl: "https://clearlink-jet.vercel.app/",
+  },
 ];
 
 const ProjectsSection = () => {
@@ -65,7 +74,7 @@ const ProjectsSection = () => {
           isSelected={tag === "Mobile"}
         />
       </div> */}
-      <ul ref={ref} className="grid md:grid-cols-2 gap-8 md:gap-12">
+      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {projectsData.map((project, index) => (
           <motion.li
             key={index}
