@@ -53,7 +53,7 @@ const Navbar = () => {
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <Link to={link.path} smooth={true} offset={-85} duration={100} className="text-white cursor-pointer">{link.title}</Link>
+                <Link to={link.path} smooth={true} offset={-85} duration={50} className="text-white cursor-pointer">{link.title}</Link>
               </li>
             ))}
           </ul>

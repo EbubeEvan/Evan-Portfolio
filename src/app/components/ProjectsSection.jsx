@@ -32,6 +32,14 @@ const projectsData = [
     gitUrl: "https://github.com/EbubeEvan/Clear-link",
     previewUrl: "https://clearlink-jet.vercel.app/",
   },
+  {
+    id: 4,
+    title: "Wura",
+    description: "An online payment solution. Built with React, Typescript and Tailwindcss. In Progress.",
+    image: "/images/projects/4.jpg",
+    tag: ["All", "Web"],
+    previewUrl: "https://wura-dev.vercel.app/",
+  },
 ];
 
 const ProjectsSection = () => {
@@ -74,7 +82,7 @@ const ProjectsSection = () => {
           isSelected={tag === "Mobile"}
         />
       </div> */}
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className="grid md:grid-cols-2 gap-8 md:gap-12">
         {projectsData.map((project, index) => (
           <motion.li
             key={index}
