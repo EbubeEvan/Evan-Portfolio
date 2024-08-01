@@ -17,7 +17,7 @@ const projectsData = [
   {
     id: 2,
     title: "BeautyCare AI",
-    description: "An AI-powered beauty consultation application where women can chat with a large language model that is a beauty specialist. Built with typescript, React, Next.js, Tailwindcss and Mongodb.",
+    description: "An AI-powered beauty consultation application where women can chat with a large language model that is a beauty specialist. Built with typescript, React, Next.js, Tailwindcss, Mongodb and Google Gemini.",
     image: "/images/projects/2.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/EbubeEvan/Beauty-Care-AI",
