@@ -16,12 +16,12 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Quiz Me",
-    description: "A Quiz app built with Typescript, React, Tailwindcss and zustand for state management.",
+    title: "BeautyCare AI",
+    description: "An AI-powered beauty consultation application where women can chat with a large language model that is a beauty specialist. Built with typescript, React, Next.js, Tailwindcss and Mongodb.",
     image: "/images/projects/2.jpg",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/EbubeEvan/Quiz-Me",
-    previewUrl: "https://quiz-me-two.vercel.app/",
+    gitUrl: "https://github.com/EbubeEvan/Beauty-Care-AI",
+    previewUrl: "https://beauty-care-ai.vercel.app/",
   },
   {
     id: 3,
