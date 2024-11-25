@@ -24,6 +24,8 @@ const HeroSection = () => {
                 "Evangeline Mmayie",
                 1000,
                 "Frontend Developer",
+                1000,
+                "Mobile Developer",
                 1000
               ]}
               wrapper="span"
@@ -32,7 +34,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-           Frontend developer with proficiency in creating user-friendly and responsive web applications.
+           Good Apps Mean Good Business. And I Make Great Apps.
           </p>
           <div>
             <a
@@ -42,7 +44,7 @@ const HeroSection = () => {
               Hire Me
             </a>
             <a
-              href="Evangeline-Mmayie-Frontend-Developer.pdf"
+              href="Evangeline-Mmayie-Frontend-Engineer.pdf"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
               download=''
             >

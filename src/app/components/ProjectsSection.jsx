@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
-// import ProjectTag from "./ProjectTag";
+import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
 const projectsData = [
@@ -25,12 +25,12 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Clearlink",
-    description: "The landing page for Clearlink video conferencing app. Built with Typescript, React, Nextjs and Tailwindcss.",
-    image: "/images/projects/3.jpg",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/EbubeEvan/Clear-link",
-    previewUrl: "https://clearlink-jet.vercel.app/",
+    title: "Jobstar",
+    description: "A mobile apps for searching for jobs delivered from different websites. Built with React Native, Expo, Typescript, and Nativewind. Click to download android.",
+    image: "/images/projects/3.png",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/EbubeEvan/Jobstar",
+    previewUrl: "https://expo.dev/artifacts/eas/5kVBUGSqsBH5RhMa4gUSer.apk",
   },
   {
     id: 4,
@@ -51,9 +51,9 @@ const ProjectsSection = () => {
     setTag(newTag);
   };
 
-  // const filteredProjects = projectsData.filter((project) =>
-  //   project.tag.includes(tag)
-  // );
+  const filteredProjects = projectsData.filter((project) =>
+    project.tag.includes(tag)
+  );
 
   const cardVariants = {
     initial: { y: 50, opacity: 0 },
@@ -62,10 +62,10 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects" className="mt-[5rem]">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-10">
         My Projects
       </h2>
-      {/* <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+      <div className="text-white flex flex-row justify-center items-center gap-2 py-6 mb-3">
         <ProjectTag
           onClick={handleTagChange}
           name="All"
@@ -81,9 +81,9 @@ const ProjectsSection = () => {
           name="Mobile"
           isSelected={tag === "Mobile"}
         />
-      </div> */}
+      </div>
       <ul ref={ref} className="grid md:grid-cols-2 gap-8 md:gap-12">
-        {projectsData.map((project, index) => (
+        {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
             variants={cardVariants}
