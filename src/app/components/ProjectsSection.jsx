@@ -26,11 +26,11 @@ const projectsData = [
   {
     id: 3,
     title: "Jobstar",
-    description: "A mobile apps for searching for jobs delivered from different websites. Built with React Native, Expo, Typescript, and Nativewind. Click to download android.",
+    description: "A mobile app for searching for jobs delivered from different websites. Built with React Native, Expo, Typescript, and Nativewind. Click to download android.",
     image: "/images/projects/3.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/EbubeEvan/Jobstar",
-    previewUrl: "https://expo.dev/artifacts/eas/5kVBUGSqsBH5RhMa4gUSer.apk",
+    previewUrl: "https://expo.dev/artifacts/eas/uhbFEmmqNfoUAi4FbqANH2.apk",
   },
   {
     id: 4,
