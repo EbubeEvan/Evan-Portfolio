@@ -30,7 +30,7 @@ const projectsData = [
     image: "/images/projects/3.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/EbubeEvan/Jobstar",
-    previewUrl: "https://expo.dev/artifacts/eas/uhbFEmmqNfoUAi4FbqANH2.apk",
+    previewUrl: "https://expo.dev/artifacts/eas/3R69GuLZuEHXGiky5Erdc9.apk",
   },
   {
     id: 4,
