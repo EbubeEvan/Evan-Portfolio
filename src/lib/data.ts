@@ -1,0 +1,38 @@
+export const projectsData = [
+    {
+      id: 1,
+      title: "Trankeep",
+      description: "A business Management platform built with typescript, React, Next.js, Tailwindcss and PostgreSQL.",
+      image: "/images/projects/1.png",
+      tag: ["All", "Web"],
+      gitUrl: "https://github.com/EbubeEvan/Trankeep",
+      previewUrl: "https://trankeep.vercel.app/",
+    },
+    {
+      id: 2,
+      title: "BeautyCare AI",
+      description: "An AI-powered beauty consultation application. Built with typescript, React, Next.js, Tailwindcss, Mongodb and Google Gemini. In Progress",
+      image: "/images/projects/2.png",
+      tag: ["All", "Web"],
+      gitUrl: "https://github.com/EbubeEvan/Beauty-Care-AI",
+      previewUrl: "https://beauty-care-ai.vercel.app/",
+    },
+    {
+      id: 3,
+      title: "Jobstar",
+      description: "A mobile job search app. Built with React Native, Expo, Typescript, and Nativewind. Click to download android.",
+      image: "/images/projects/3.png",
+      tag: ["All", "Mobile"],
+      gitUrl: "https://github.com/EbubeEvan/Jobstar",
+      previewUrl: "https://expo.dev/artifacts/eas/3R69GuLZuEHXGiky5Erdc9.apk",
+    },
+    {
+      id: 4,
+      title: "Lyfter",
+      description: "A taxi booking mobile app. Built with React Native, Expo, Typescript, Nativewind, Google maps and Clerk. Click to download android.",
+      image: "/images/projects/4.png",
+      tag: ["All", "Mobile"],
+      gitUrl: "https://github.com/EbubeEvan/Lyfter",
+      previewUrl: "https://expo.dev/artifacts/eas/cThsuKRAtceFAr8PY8XxAn.apk",
+    },
+  ];
