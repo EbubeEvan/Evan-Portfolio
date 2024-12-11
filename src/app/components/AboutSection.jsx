@@ -179,7 +179,7 @@ const AboutSection = () => {
           About Me
         </h2>
         <p className="text-base lg:text-lg mb-5">
-          I am a dedicated web and mobile developer with a passion for creating
+          I am an experienced web and mobile developer committed to creating
           innovative and user-friendly solutions. With a keen eye for detail and
           a knack for problem-solving, I transform ideas into reality.
         </p>
