@@ -11,7 +11,7 @@ export const projectsData = [
     {
       id: 2,
       title: "BeautyCare AI",
-      description: "An AI-powered beauty consultation application. Built with typescript, React, Next.js, Tailwindcss, Mongodb and Google Gemini. In Progress",
+      description: "An AI-powered beauty consultation application. Built with typescript, React, Next.js, Tailwindcss, Mongodb and Google Gemini.",
       image: "/images/projects/2.png",
       tag: ["All", "Web"],
       gitUrl: "https://github.com/EbubeEvan/Beauty-Care-AI",
