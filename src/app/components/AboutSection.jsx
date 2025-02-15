@@ -1,166 +1,9 @@
 "use client";
-import React, { useTransition, useState } from "react";
 import Image from "next/image";
-import TabButton from "./TabButton";
 import { motion } from "framer-motion";
-
-const TAB_DATA = [
-  {
-    title: "Skills",
-    id: "skills",
-    content: (
-      <div className="grid grid-cols-3 md:grid-cols-4 gap-y-3 gap-x-3">
-        <div>
-          <Image
-            src="images/skill-icons/html-5-svgrepo-com.svg"
-            width={50}
-            height={50}
-            alt="html-icon"
-          />
-          <p className="mt-[0.5rem]">HTML</p>
-        </div>
-        <div>
-          <Image
-            src="images/skill-icons/css-3-svgrepo-com.svg"
-            width={50}
-            height={50}
-            alt="css-icon"
-          />
-          <p className="mt-[0.5rem]">CSS</p>
-        </div>
-        <div>
-          <Image
-            src="images/skill-icons/tailwindcss-icon-svgrepo-com.svg"
-            width={50}
-            height={50}
-          />
-          <p className="mt-[0.5rem]" alt="tailwind-icon">
-            Tailwindcss
-          </p>
-        </div>
-        <div>
-          <Image
-            src="images/skill-icons/javascript-svgrepo-com.svg"
-            width={50}
-            height={50}
-          />
-          <p className="mt-[0.5rem]" alt="javascript-icon">
-            Javascript
-          </p>
-        </div>
-        <div>
-          <Image
-            src="images/skill-icons/typescript-icon-svgrepo-com.svg"
-            width={50}
-            height={50}
-          />
-          <p className="mt-[0.5rem]" alt="typecript-icon">
-            Typescript
-          </p>
-        </div>
-        <div>
-          <Image
-            src="images/skill-icons/react-js-icon.svg"
-            width={50}
-            height={50}
-          />
-          <p className="mt-[0.5rem]" alt="typecript-icon">
-            React
-          </p>
-        </div>
-        <div>
-          <Image
-            src="images/skill-icons/nextjs-svgrepo-com.svg"
-            width={50}
-            height={50}
-          />
-          <p className="mt-[0.5rem]" alt="nextjs-icon">
-            Nextjs
-          </p>
-        </div>
-        <div>
-          <Image
-            src="images/skill-icons/react-native.svg"
-            width={50}
-            height={50}
-          />
-          <p className="mt-[0.5rem]" alt="nextjs-icon">
-            React Native
-          </p>
-        </div>
-        <div>
-          <Image
-            src="images/skill-icons/firebase-svgrepo-com.svg"
-            width={50}
-            height={50}
-          />
-          <p className="mt-[0.5rem]" alt="nextjs-icon">
-            Firebase
-          </p>
-        </div>
-        <div>
-          <Image
-            src="images/skill-icons/postgresql-svgrepo-com.svg"
-            width={50}
-            height={50}
-          />
-          <p className="mt-[0.5rem]" alt="nextjs-icon">
-            PostgreSQL
-          </p>
-        </div>
-        <div>
-          <Image
-            src="images/skill-icons/jest-svgrepo-com.svg"
-            width={50}
-            height={50}
-          />
-          <p className="mt-[0.5rem]" alt="nextjs-icon">
-            Jest
-          </p>
-        </div>
-        <div>
-          <Image
-            src="images/skill-icons/mongo-svgrepo-com.svg"
-            width={50}
-            height={50}
-          />
-          <p className="mt-[0.5rem]" alt="nextjs-icon">
-            Mongodb
-          </p>
-        </div>
-      </div>
-    ),
-  },
-  {
-    title: "Education",
-    id: "education",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>Stutern Graduate Accelerator</li>
-        <li>University of Nigeria, Nsukka</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Certifications",
-    id: "certifications",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>Certificate of Completion, Stutern Graduate Accelerator</li>
-      </ul>
-    ),
-  },
-];
+import { skills } from "@/lib/data";
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
-  const [isPending, startTransition] = useTransition();
-
-  const handleTabChange = (id) => {
-    startTransition(() => {
-      setTab(id);
-    });
-  };
 
   return (
     <section className="text-white max-md:mt-[5rem]" id="about">
@@ -219,7 +62,7 @@ const AboutSection = () => {
           }}
           className="mt-4 md:mt-0 text-left flex flex-col h-full"
         >
-          <motion.div
+          <motion.p
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -228,30 +71,10 @@ const AboutSection = () => {
               hidden: { opacity: 0, x: -50 },
               visible: { opacity: 1, x: 0 },
             }}
-            className="flex flex-row justify-start mt-8 max-[280px]:flex-wrap"
+            className="text-2xl max-md:mt-7 font-semibold text-white"
           >
-            <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
-            >
-              {" "}
-              Skills{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
-            >
-              {" "}
-              Education{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
-            >
-              {" "}
-              Certifications{" "}
-            </TabButton>
-          </motion.div>
+            My skills include but aren&apos;t limited to:
+          </motion.p>
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -263,7 +86,19 @@ const AboutSection = () => {
             }}
             className="mt-8"
           >
-            {TAB_DATA.find((t) => t.id === tab).content}
+            <div className="grid grid-cols-3 md:grid-cols-4 gap-y-3 gap-x-3">
+              {skills.map((skill) => (
+                <div key={skill.alt}>
+                  <Image
+                    src={skill.src}
+                    width={50}
+                    height={50}
+                    alt={skill.alt}
+                  />
+                  <p className="mt-[0.5rem]">{skill.name}</p>
+                </div>
+              ))}
+            </div>
           </motion.div>
         </motion.div>
       </div>
