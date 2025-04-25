@@ -27,7 +27,7 @@ export const projectsData = [
     image: "/images/projects/3.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/EbubeEvan/Jobstar",
-    previewUrl: "https://expo.dev/artifacts/eas/3R69GuLZuEHXGiky5Erdc9.apk",
+    previewUrl: "https://expo.dev/artifacts/eas/oX5fyxYPFW2mE8mpi6XzFv.apk",
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export const projectsData = [
     image: "/images/projects/4.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/EbubeEvan/Lyfter",
-    previewUrl: "https://expo.dev/artifacts/eas/cThsuKRAtceFAr8PY8XxAn.apk",
+    previewUrl: "https://expo.dev/artifacts/eas/rhBmDPnZPUanuHyB9hwKpb.apk",
   },
 ];
 
