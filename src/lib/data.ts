@@ -1,33 +1,31 @@
 export const projectsData = [
   {
     id: 1,
-    title: "Trankeep",
+    title: "Laferla Website",
     description:
-      "A business Management platform built with typescript, React, Next.js, Tailwindcss and PostgreSQL.",
+      "A business website for Laferla, a leading insurance provider for Malta. Built with Typescript, React, Next.js and Tailwindcss.",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/EbubeEvan/Trankeep",
-    previewUrl: "https://trankeep.vercel.app/",
+    previewUrl: "https://laferla.com.mt/",
   },
   {
     id: 2,
-    title: "BeautyCare AI",
+    title: "Laferla Insurance Mobile App",
     description:
-      "An AI-powered beauty consultation application. Built with typescript, React, Next.js, Tailwindcss, Mongodb and Google Gemini.",
+      "A mobile application for purchasing and managing Laferla insurance policies. Built with Typescript, React Native, Expo and Tailwindcss.",
     image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/EbubeEvan/Beauty-Care-AI",
-    previewUrl: "https://beauty-care-ai.vercel.app/",
+    tag: ["All", "Mobile"],
+    previewUrl:
+      "https://play.google.com/store/apps/details?id=com.laferla.laferla",
   },
   {
     id: 3,
-    title: "Jobstar",
+    title: "Laferla Insurance Web App",
     description:
-      "A mobile job search app. Built with React Native, Expo, Typescript, and Nativewind. Click to download android.",
+      "A web application for purchasing and managing Laferla insurance policies. Built with Typescript, React, Next.js and Tailwindcss.",
     image: "/images/projects/3.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "https://github.com/EbubeEvan/Jobstar",
-    previewUrl: "https://expo.dev/artifacts/eas/oX5fyxYPFW2mE8mpi6XzFv.apk",
+    tag: ["All", "Web"],
+    previewUrl: "https://app.laferla.com.mt/",
   },
   {
     id: 4,
@@ -39,6 +37,36 @@ export const projectsData = [
     gitUrl: "https://github.com/EbubeEvan/Lyfter",
     previewUrl: "https://expo.dev/artifacts/eas/rhBmDPnZPUanuHyB9hwKpb.apk",
   },
+  {
+    id: 5,
+    title: "BeautyCare AI",
+    description:
+      "An AI-powered beauty consultation application. Built with Typescript, React, Next.js, Tailwindcss, Mongodb and Google Gemini.",
+    image: "/images/projects/5.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/EbubeEvan/Beauty-Care-AI",
+    previewUrl: "https://beauty-care-ai.vercel.app/",
+  },
+  {
+    id: 6,
+    title: "Trankeep",
+    description:
+      "A business Management platform built with Typescript, React, Next.js, Tailwindcss and PostgreSQL.",
+    image: "/images/projects/6.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/EbubeEvan/Trankeep",
+    previewUrl: "https://trankeep.vercel.app/",
+  },
+  // {
+  //   id: 3,
+  //   title: "Jobstar",
+  //   description:
+  //     "A mobile job search app. Built with React Native, Expo, Typescript, and Nativewind. Click to download android.",
+  //   image: "/images/projects/3.png",
+  //   tag: ["All", "Mobile"],
+  //   gitUrl: "https://github.com/EbubeEvan/Jobstar",
+  //   previewUrl: "https://expo.dev/artifacts/eas/oX5fyxYPFW2mE8mpi6XzFv.apk",
+  // },
 ];
 
 export const skills = [
