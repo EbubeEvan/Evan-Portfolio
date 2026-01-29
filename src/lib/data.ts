@@ -35,7 +35,7 @@ export const projectsData = [
     image: "/images/projects/4.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/EbubeEvan/Lyfter",
-    previewUrl: "https://expo.dev/artifacts/eas/rhBmDPnZPUanuHyB9hwKpb.apk",
+    previewUrl: "https://expo.dev/artifacts/eas/mUeu6nH2dAEQ4a1Qx5e7Wc.apk",
   },
   {
     id: 5,
