@@ -3,6 +3,8 @@ import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import HeroImage from "@/assets/images/hero-image.png";
+import Resume from "@/assets/documents/Evangeline_Mmayie_Software_Engineer.pdf";
 
 const HeroSection = () => {
   return (
@@ -46,7 +48,7 @@ const HeroSection = () => {
               Let&apos;s talk
             </a>
             <a
-              href="Evangeline-Mmayie-Frontend-Mobile-Engineer.pdf"
+              href={Resume}
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
               download=''
             >
@@ -63,7 +65,7 @@ const HeroSection = () => {
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
           <Image
-              src="/images/hero-image.png"
+              src={HeroImage}
               alt="hero image"
               className="max-md:mt-[2rem] max-[280px]:w-[200px] "
               width={300}

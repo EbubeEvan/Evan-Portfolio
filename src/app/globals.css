@@ -16,6 +16,11 @@
   }
 }
 
+html, body {
+  scrollbar-gutter: stable;
+  overflow-x: hidden;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

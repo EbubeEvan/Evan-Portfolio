@@ -2,11 +2,12 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { skills } from "@/lib/data";
+import AboutImage from "@/assets/images/about-image.avif";
 
 const AboutSection = () => {
 
   return (
-    <section className="text-white max-md:mt-[5rem]" id="about">
+    <section className="text-white mt-[6rem]" id="about">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -45,7 +46,7 @@ const AboutSection = () => {
           }}
         >
           <Image
-            src="/images/about-image.avif"
+            src={AboutImage}
             width={500}
             height={500}
             alt="about-image"
