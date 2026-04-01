@@ -87,16 +87,18 @@ const AboutSection = () => {
             }}
             className="mt-8"
           >
-            <div className="grid grid-cols-3 md:grid-cols-4 gap-y-3 gap-x-3">
+            <div className="grid grid-cols-3 md:grid-cols-4 gap-y-3 gap-x-3 justify-items-center">
               {skills.map((skill) => (
-                <div key={skill.alt}>
+                <div key={skill.alt} className="min-w-0 w-full flex flex-col items-center">
                   <Image
                     src={skill.src}
                     width={50}
                     height={50}
                     alt={skill.alt}
                   />
-                  <p className="mt-[0.5rem]">{skill.name}</p>
+                  <p className="mt-[0.5rem] text-center text-sm leading-tight break-words max-w-[92px]">
+                    {skill.name}
+                  </p>
                 </div>
               ))}
             </div>
