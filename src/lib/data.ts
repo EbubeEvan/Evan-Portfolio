@@ -26,7 +26,7 @@ export const projectsData = [
       "Most AI chatbots can only talk. The AI Expert System is an autonomous agent that acts — completing dev tasks like setting up GitHub repos, writing code, and deploying full-stack projects through a real-time multimodal chat interface.",
     image: AiExpertSystemImage.src,
     tag: ["All", "Web"],
-    previewUrl: "https://app.ainiro.io",
+    previewUrl: "https://playground.hyperlambda.dev/",
   },
   {
     id: 2,
